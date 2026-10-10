@@ -2,10 +2,10 @@
 <html lang="es">
 <head>
 <meta charset="UTF-8">
-<meta name="color-scheme" content="light">
 <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
-<title>NEXO FM | SOLO TEMAZOS</title>
-<meta name="description" content="Escucha NEXO FM en directo: solo temazos las 24 horas. Burgos 106.9 FM y Cantabria 105.8 FM.">
+<meta name="color-scheme" content="light">
+<title>Nexo FM · Solo Hits en directo | Burgos 104.7 FM y Cantabria 105.8 FM</title>
+<meta name="description" content="Escucha Nexo FM en directo: solo hits las 24 horas. Burgos 104.7 FM y Cantabria 105.8 FM.">
 <link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 64 64'%3E%3Crect width='64' height='64' rx='14' fill='%23ff6a00'/%3E%3Cpath d='M18 46V18l28 28V18' fill='none' stroke='%23000' stroke-width='7' stroke-linejoin='round'/%3E%3C/svg%3E">
 <link href="https://fonts.googleapis.com/css2?family=Unbounded:wght@500;800&family=Space+Grotesk:wght@400;500;700&display=swap" rel="stylesheet">
 <link rel="stylesheet" href="nexo.css">
@@ -52,29 +52,20 @@ h1,h2,h3,h4{font-weight:800;letter-spacing:-.04em}
 .party form button{background:var(--ink);color:var(--ac);border:0;border-radius:99px;padding:14px 22px;font-weight:700}
 .ok{color:var(--ink)}
 footer{margin-top:0;border-top:0}
-
-.rt{display:flex;gap:10px;align-items:center}
-.card{cursor:pointer;transition:border-color .25s,box-shadow .2s}.card:hover{box-shadow:10px 10px 0 var(--ln)}
-.nowc{transition:transform .15s;will-change:transform}
-.tools{display:flex;gap:8px;flex-wrap:wrap;margin-top:14px}
-.tools button{border:2px solid var(--ink);background:#fff;color:#17110c;border-radius:99px;padding:8px 16px;font-weight:700;font-size:14px;transition:transform .15s}
-.tools button:hover{transform:translateY(-3px) rotate(-3deg)}
-.reveal{opacity:0;transform:translateY(32px);transition:opacity .7s,transform .7s}.reveal.v{opacity:1;transform:none}
-#dlg .btn{margin-top:10px;border:2px solid var(--ln)}
 </style>
 </head>
 <body>
 <header class="top"><div class="wrap">
   <a class="logo" href="#inicio">NEXO<b>FM</b></a>
-  <nav class="mn"><a href="#inicio">Directo</a><a href="frec.html">Frecuencias</a><a href="#titulares">Titulares</a><a href="#nexonews">NexoNews</a></nav>
-  <div class="rt"><button class="btn" id="topPlay">Escuchar</button></div>
+  <nav class="mn"><a href="#inicio">Directo</a><a href="#programas">Programación</a><a href="#titulares">Titulares</a><a href="#nexonews">NexoNews</a></nav>
+  <button class="btn" id="topPlay">Escuchar</button>
 </div></header>
 <main id="inicio">
   <div class="wrap hero">
     <div>
-      <h1>Solo todo el día.<mark>temazos</mark> </h1>
+      <h1>Solo <mark>hits</mark>, todo el día.</h1>
       <p>Música non-stop, entrevistas y el mejor directo, las 24 horas.</p>
-      <div class="stk"><span>106.9<small>BURGOS</small></span><span>105.8<small>CANTABRIA</small></span></div>
+      <div class="stk"><span>104.7<small>BURGOS</small></span><span>105.8<small>CANTABRIA</small></span></div>
     </div>
     <div class="nowc">
       <div class="l"><span class="dot"></span><span id="liveTxt">En directo</span></div>
@@ -82,10 +73,9 @@ footer{margin-top:0;border-top:0}
       <button class="pbtn" id="heroPlay" aria-label="Escuchar en directo"><svg id="heroIcon" viewBox="0 0 24 24"><path d="M8 5v14l11-7z"/></svg></button>
       <div class="p" id="nowProg">Solo hits, 24 horas</div><div class="p" id="nxLine"></div>
       <div id="pgw"><div class="pg"><i id="pgBar"></i></div><div class="pgt"><span id="pgL"></span><span id="pgR"></span></div></div>
-      <div class="tools"><button id="sleep">Dormir: no</button><button id="share">Compartir</button></div>
     </div>
   </div>
-  <div class="tk" aria-hidden="true"><div>SOLO HITS · 24 HORAS · BURGOS 106.9 · CANTABRIA 105.8 · SOLO HITS · 24 HORAS · BURGOS 106.9 · CANTABRIA 105.8 · SOLO HITS · 24 HORAS · BURGOS 106.9 · CANTABRIA 105.8 · SOLO HITS · 24 HORAS · BURGOS 106.9 · CANTABRIA 105.8 · </div></div>
+  <div class="tk" aria-hidden="true"><div>SOLO HITS · 24 HORAS · BURGOS 104.7 · CANTABRIA 105.8 · SOLO HITS · 24 HORAS · BURGOS 104.7 · CANTABRIA 105.8 · SOLO HITS · 24 HORAS · BURGOS 104.7 · CANTABRIA 105.8 · SOLO HITS · 24 HORAS · BURGOS 104.7 · CANTABRIA 105.8 · </div></div>
   <div class="wrap">
     <section id="programas"><div class="sh"><h2>Programa<em>ción</em></h2></div>
       <div class="tabs" id="tabs" role="tablist" aria-label="Día de la semana"></div><div class="sched" id="list"></div></section>
@@ -101,45 +91,10 @@ footer{margin-top:0;border-top:0}
   </div></div>
 </main>
 <footer><div class="wrap"><div class="fg">
-  <div><div class="logo">NEXO<b>FM</b></div><p>Los mejores temazos,solo temazos</p></div>
+  <div><div class="logo">NEXO<b>FM</b></div><p>Solo hits y lo mejor de la música, en directo las 24 horas.</p></div>
   <div><h2>Emisora</h2><a href="#" id="footPlay">Escuchar en directo</a><a href="#" data-m="equipo">Nuestro equipo</a><a href="#" data-m="contacto">Contacto</a></div>
   <div><h2>Legal</h2><a href="#" data-m="legal">Aviso legal</a><a href="#" data-m="privacidad">Privacidad</a><a href="#" data-m="cookies">Cookies</a></div>
 </div><div class="fb"><span>© 2026 Nexo FM. Todos los derechos reservados.</span><span><a href="https://www.instagram.com/nexofm_es" target="_blank" rel="noopener">Instagram</a> · <a href="https://x.com/nexofm_es" target="_blank" rel="noopener">X</a> · <a href="https://www.youtube.com/@nexofm" target="_blank" rel="noopener">YouTube</a></span></div></div></footer>
 <script src="nexo.js"></script>
-<script>
-(function(){
-  var $=function(i){return document.getElementById(i)},P=window.NEXO.P;
-  function ls(k,v){try{if(v===undefined)return JSON.parse(localStorage.getItem(k));localStorage.setItem(k,JSON.stringify(v))}catch(e){return null}}
-  function esc(t){return String(t).replace(/[&<>"]/g,function(c){return {'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;'}[c]})}
-  function say(m){var t=$('toast');t.textContent=m;t.classList.add('show');setTimeout(function(){t.classList.remove('show')},2600)}
-  // inclinación 3D de la tarjeta
-  var nc=document.querySelector('.nowc');
-  if(nc&&matchMedia('(hover:hover)').matches){nc.addEventListener('mousemove',function(e){var r=nc.getBoundingClientRect(),x=(e.clientX-r.left)/r.width-.5,y=(e.clientY-r.top)/r.height-.5;nc.style.transform='perspective(900px) rotateY('+x*10+'deg) rotateX('+-y*10+'deg)'});nc.addEventListener('mouseleave',function(){nc.style.transform=''})}
-  // temporizador de sueño
-  var SL=[0,15,30,60],si=0,tm=null,end=0;
-  $('sleep').addEventListener('click',function(){si=(si+1)%4;clearInterval(tm);var b=$('sleep');
-    if(!SL[si]){b.textContent='Dormir: no';return}
-    end=Date.now()+SL[si]*60000;
-    tm=setInterval(function(){var m=Math.ceil((end-Date.now())/60000);if(m<=0){clearInterval(tm);$('audio').pause();b.textContent='Dormir: no';si=0;say('Buenas noches. Directo pausado')}else b.textContent='Se apaga en '+m+' min'},1000);
-    b.textContent='Se apaga en '+SL[si]+' min'});
-  // compartir
-  $('share').addEventListener('click',function(){var u=location.href.split('#')[0],d={title:'Nexo FM · Solo Hits',text:'Escucha Nexo FM en directo',url:u};
-    if(navigator.share)navigator.share(d).catch(function(){});else if(navigator.clipboard)navigator.clipboard.writeText(u).then(function(){say('Enlace copiado')})});
-  // ficha del programa + calendario
-  function ics(p){var D=['SU','MO','TU','WE','TH','FR','SA'],n=new Date(),k=0;while(p.days.indexOf((n.getDay()+k)%7)<0)k++;
-    var a=new Date(n.getFullYear(),n.getMonth(),n.getDate()+k),z=new Date(a.getFullYear(),a.getMonth(),a.getDate()+(p.e===24?1:0));
-    var q=function(d,h){return d.getFullYear()+('0'+(d.getMonth()+1)).slice(-2)+('0'+d.getDate()).slice(-2)+'T'+('0'+(h%24)).slice(-2)+'0000'};
-    var t=['BEGIN:VCALENDAR','VERSION:2.0','PRODID:-//Nexo FM//ES','BEGIN:VEVENT','UID:'+Date.now()+'@nexofm.es','DTSTAMP:'+new Date().toISOString().replace(/[-:]|\.\d+/g,''),'DTSTART:'+q(a,p.s),'DTEND:'+q(z,p.e),'RRULE:FREQ=WEEKLY;BYDAY='+p.days.map(function(d){return D[d]}).join(','),'SUMMARY:'+p.n+' · Nexo FM','DESCRIPTION:'+p.d,'URL:https://www.nexofm.es/','END:VEVENT','END:VCALENDAR'].join('\r\n');
-    var l=document.createElement('a');l.href=URL.createObjectURL(new Blob([t],{type:'text/calendar'}));l.download='nexo-fm-'+p.n.toLowerCase().replace(/[^a-z0-9]+/g,'-')+'.ics';l.click()}
-  var cur=null;
-  function open(c){var p=P[+c.dataset.i];if(!p)return;cur=p;$('dt').textContent=p.n;$('db').innerHTML='<p>'+esc(p.d)+'</p><p><b>'+p.l+'</b></p><button class="btn" id="ics">Añadir al calendario</button>';$('dlg').showModal()}
-  $('list').addEventListener('click',function(e){var c=e.target.closest('.card');if(c)open(c)});
-  $('list').addEventListener('keydown',function(e){if(e.key==='Enter'||e.key===' '){var c=e.target.closest('.card');if(c){e.preventDefault();open(c)}}});
-  document.addEventListener('click',function(e){if(e.target.id==='ics'&&cur)ics(cur)});
-  // aparición al hacer scroll
-  var io=new IntersectionObserver(function(en){en.forEach(function(x){if(x.isIntersecting){x.target.classList.add('v');io.unobserve(x.target)}})},{threshold:.12});
-  document.querySelectorAll('.reveal,#titulares,#nexonews').forEach(function(el){el.classList.add('reveal');io.observe(el)});
-})();
-</script>
 </body>
 </html>

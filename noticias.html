@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<meta name="color-scheme" content="light">
+<title>Noticias | Nexo FM · Solo Hits · Burgos 104.7 FM y Cantabria 105.8 FM</title>
+<meta name="description" content="Últimas noticias de Nexo FM: novedades de la emisora, entrevistas, estrenos musicales y planes. Burgos 104.7 FM y Cantabria 105.8 FM.">
+<link rel="canonical" href="https://www.nexofm.es/noticias.html">
+<meta property="og:type" content="website"><meta property="og:title" content="Noticias de Nexo FM"><meta property="og:description" content="Novedades, entrevistas y estrenos de Nexo FM."><meta property="og:url" content="https://www.nexofm.es/noticias.html"><meta property="og:image" content="https://www.nexofm.es/sfot.png">
+<link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 64 64'%3E%3Crect width='64' height='64' rx='14' fill='%23ff6a00'/%3E%3Cpath d='M18 46V18l28 28V18' fill='none' stroke='%23000' stroke-width='7' stroke-linejoin='round'/%3E%3C/svg%3E">
+<link href="https://fonts.googleapis.com/css2?family=Unbounded:wght@500;800&family=Space+Grotesk:wght@400;500;700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="nexo.css">
+<link rel="stylesheet" href="noticias.css">
+</head>
+<body>
+<header class="top"><div class="wrap">
+  <a class="logo" href="index.html#inicio">NEXO<b>FM</b></a>
+  <nav class="mn"><a href="index.html#inicio">Directo</a><a href="index.html#programas">Programación</a><a href="noticias.html" class="on">Noticias</a><a href="index.html#nexonews">NexoNews</a></nav>
+  <a class="btn" href="index.html#inicio">Escuchar</a>
+</div></header>
+<main>
+<div class="wrap">
+  <div class="nh"><h1>Las <em>noticias</em></h1><p>Novedades de la emisora, entrevistas, estrenos y planes. Todo lo que pasa en Nexo FM.</p></div>
+  <div class="filt" id="filt" role="group" aria-label="Filtrar por categoría">
+    <button aria-pressed="true" data-f="todas">Todas</button><button aria-pressed="false" data-f="Emisora">Emisora</button><button aria-pressed="false" data-f="Música">Música</button><button aria-pressed="false" data-f="Entrevistas">Entrevistas</button>
+  </div>
+  <div class="grid" id="grid">
+<!-- AÑADE CADA NOTICIA NUEVA COMO UNA TARJETA. La más reciente arriba; usa class="nc big" para destacarla. -->
+    <a class="nc big" href="noticia-plantilla.html" data-cat="Emisora"><img src="sfot.png" alt="La emisora Nexo FM renueva su identidad" loading="lazy"><div class="tx"><div class="meta"><span class="tag">Emisora</span><time>10 de octubre de 2026</time></div><h3>La emisora Nexo FM renueva su identidad</h3><p>Nexo FM estrena nuevo diseño, nueva web y más contenidos para seguir siendo tu emisora de solo hits.</p><span class="go">Leer noticia →</span></div></a>
+  </div>
+  <p class="vacio" id="vacio">Todavía no hay noticias en esta categoría.</p>
+</div>
+</main>
+<footer><div class="wrap"><div class="fg">
+  <div><div class="logo">NEXO<b>FM</b></div><p>Solo hits y lo mejor de la música, en directo las 24 horas.</p></div>
+  <div><h2>Emisora</h2><a href="index.html#inicio">Escuchar en directo</a><a href="noticias.html">Noticias</a><a href="index.html#programas">Programación</a></div>
+  <div><h2>Legal</h2><a href="index.html">Aviso legal</a><a href="index.html">Privacidad</a><a href="index.html">Cookies</a></div>
+</div><div class="fb"><span>© 2026 Nexo FM. Todos los derechos reservados.</span><span><a href="https://www.instagram.com/nexofm_es" target="_blank" rel="noopener">Instagram</a> · <a href="https://x.com/nexofm_es" target="_blank" rel="noopener">X</a> · <a href="https://www.youtube.com/@nexofm" target="_blank" rel="noopener">YouTube</a></span></div></div></footer>
+<script>
+(function(){var b=document.querySelectorAll('#filt button'),c=document.querySelectorAll('#grid .nc'),v=document.getElementById('vacio');
+b.forEach(function(x){x.addEventListener('click',function(){b.forEach(function(y){y.setAttribute('aria-pressed',y===x)});var f=x.dataset.f,n=0;
+c.forEach(function(k){var s=f==='todas'||k.dataset.cat===f;k.style.display=s?'':'none';if(s)n++});v.style.display=n?'none':'block'})})})();
+</script>
+</body>
+</html>
