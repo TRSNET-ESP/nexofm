@@ -199,3 +199,7 @@ h1{overflow-wrap:normal}
 /* Sin carátula clara: logo de la emisora, entero y sin recortar */
 .cover.logo{object-fit:contain;background:rgba(0,0,0,.35);padding:12px}
 .bar .cover.logo{padding:6px}
+
+/* Móvil: la carátula nunca se encoge y el desenfoque usa el prefijo de Safari */
+.nowband .cover{flex:none}
+.nbg{-webkit-filter:blur(46px) saturate(1.5) brightness(.65)}
